@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>exctended hanoi</title>
+        <style>
+            .container{
+                max-width: 1000px;
+            margin:0 auto;
+            background-color: #eee;
+            overflow: hidden;
+            text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<h2> tower of hanoi</h2>
+<button onclick="Hanoi.start()" style="margin-right: 15px; ">start Hanoi</button>
+<button onclick="Hanoi.resume()" style="margin-right: 15px; ">resume</button>
+<button onclick="Hanoi.pause()" style="margin-right: 15px; ">pause!</button>
+<label for="number_disks"> number Of Disks:</label>
+<select id="number_disks" onclick="Hanoi.setNumber(value)">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3" selected="yes">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7" >7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+<!--label for="number_disks"> animation speed</label>
+<select id="number_disks" onclick="Hanoi.changespeed(value)">
+    <option value="1" selected="yes">1</option>
+    <option value="1.5">1.5</option>
+    <option value="5">0.5</option-->
+
+
+</select>
+    <button  onclick="Hanoi.reset()" style="margin-left: 15px;margin-right: 15px">reset</button>
+    <button onclick="Hanoi.extended_hanoi()" >start exctended hanoi</button>
+    <br><br><br><br><br>
+    <script src="./p5.min.js"></script>
+<script src="sketch.js"></script>
+        </div>
+
+
+       
+
+
+
+    </body>
+</html>
